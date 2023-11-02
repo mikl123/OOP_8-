@@ -2,13 +2,17 @@ package com.example.demo.Entities;
 
 import com.example.demo.Packing.PackingInterface;
 
+// import jakarta.persistence.Entity;
+// import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Setter @NoArgsConstructor
+// @Entity
 public class Flower extends Thing implements PackingInterface{
     @Getter
+    // @Id
     private int id = 0;
     private double sepalLength = 0;
     private FlowerColor color = FlowerColor.BLUE;
